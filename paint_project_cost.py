@@ -12,13 +12,14 @@ def get_cost(sqft_walls, sqft_ceiling, sqft_per_gallon, cost_per_gallon):
 project_cost = get_cost(432 , 144, 400, 15)
 print(project_cost)
 
-# The output of above code is 21.59999999998
+# The output of above code is 21.5999999998
 
 # now we round off current answer by using ceil function
 
 import math
 new_value = math.ceil(project_cost)
 print(new_value)
+
 
 
 
