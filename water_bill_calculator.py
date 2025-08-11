@@ -13,13 +13,14 @@ Above 30,000 gallons → $10 per 1000 gallons  '''
 
 def get_water_bill(num_gallons):
     if num_gallons >= 30001:
-        amount = 10 * (num_gallons / 1000)
+        bill = 10 * (num_gallons / 1000)
     elif num_gallons >= 22001:
-        amount = 7 * (num_gallons / 1000)
+        bill = 7 * (num_gallons / 1000)
     elif num_gallons >= 8001:
-        amount = 6 * (num_gallons / 1000)
+        bill = 6 * (num_gallons / 1000)
     elif num_gallons >= 0:
-        amount = 5 * (num_gallons / 1000)
+        bill = 5 * (num_gallons / 1000)
     return amount
 print(get_water_bill(10000))
+
 print(get_water_bill(25000))
